@@ -1,0 +1,22 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Text Editor & IDE configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Accidental log or backup dumps
+*.log
+*.bak
+*.tmp
+
+# Sensitive Keys & Environment files
+*.key
+*.pem
+*.env
+id_rsa*
