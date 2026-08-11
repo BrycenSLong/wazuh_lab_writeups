@@ -26,6 +26,10 @@ I am new to documentation and trying mark down for the first time as a medium fo
 * **Topics:** HIDS, Real-Time Inotify Triggers, Log Telemetry Parsing, MITRE ATT&CK T1565.001
 * **Summary:** Configured real-time monitoring on sensitive SSH directories, validated Level 7 integrity alerts upon file modification, and analyzed underlying network baseline chatter (ICMP Type 9 and UFW multicast drops).
 
+### [Lab 01: Firewall Configuration, Traffic Logging, and Alert Generation](./labs/01-firewall-logging-alerts.md)
+* **Topics:** UFW, Host-Based Firewall Rules, Syslog Parsing, Wazuh Alert Rules, Network Telemetry
+* **Summary:** Reconfigured host firewall rules, enabled kernel-level traffic logging for dropped packets, and ingested UFW telemetry into Wazuh to generate real-time security alerts.
+
 *(New lab write-ups and articles will be added here as experiments are completed.)*
 
 ---
