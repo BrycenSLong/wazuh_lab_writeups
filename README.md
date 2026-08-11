@@ -28,7 +28,7 @@ I am new to documentation and trying mark down for the first time as a medium fo
 
 *(New lab write-ups and articles will be added here as experiments are completed.)*
 
-### [Lab 02: Real-Time File Integrity Monitoring (FIM) & Telemetry Validation](./labs/01-fim-realtime-ssh.md)
+### [Lab 02: Real-Time File Integrity Monitoring (FIM) & Telemetry Validation](./labs/02-fim-realtime-ssh.md)
 * **Topics:** HIDS, Real-Time Inotify Triggers, Log Telemetry Parsing, MITRE ATT&CK T1565.001
 * **Summary:** Configured real-time monitoring on sensitive SSH directories, validated Level 7 integrity alerts upon file modification, and analyzed underlying network baseline chatter (ICMP Type 9 and UFW multicast drops).
 
