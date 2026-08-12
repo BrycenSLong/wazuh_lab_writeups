@@ -1,4 +1,4 @@
-# Lab 01: Real-Time File Integrity Monitoring (FIM) & Telemetry Validation
+# Lab 01: Zero-Trust Firewall Configuration, Logging, and Custom Alert Generation
 
 ## Executive Summary
 The goal of this lab was to secure a Linux endpoint using a default-deny firewall posture and establish custom alerting in Wazuh SIEM for blocked incoming network traffic.
