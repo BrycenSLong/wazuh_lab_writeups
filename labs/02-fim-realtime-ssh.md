@@ -72,6 +72,7 @@ Upon file modification, Wazuh's real-time inotify watcher triggered a **Level 7 
 During dashboard and log parsing, surrounding endpoint network chatter was evaluated to distinguish benign infrastructure traffic from potential security threats:
 
 **1. ICMP Type 9 (Router Advertisements):** Multicast traffic (224.0.0.1 / 01:00:5e:00:00:01) was observed and confirmed as standard router advertisement chatter originating from the local gateway interface (Technicolor MAC vendor f8:d0:0e:xx:xx:xx).
+
 **2. Host Firewall Enforcement:** Inspected UFW kernel logs dropping incomming WS-Discovery (UDP 3702) traffic over IPv6 link-local addresses(fe80::) confirming active host-based firewall enforcement.
 
 # Key Takeaways & Practical Lessons
