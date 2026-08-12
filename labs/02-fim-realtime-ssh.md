@@ -25,11 +25,11 @@ Configured the target endpoint agent to monitor sensitive SSH user configuration
 <syscheck>
   <directories realtime="yes" report_changes="yes">/home/labuser/.ssh</directories>
 </syscheck>
-
+```
 ### 2.Baseline Scan Verification
 Monitored initial system scanning telementary via ``/var/ossec/logs/ossec.log`` to confirm syscheckd completed it's baseline build prior to event testing:
 
-  `sudo grep -i "File integrity monitoring scan enabled" /var/ossec/logs/ossec.log``
+  ``sudo grep -i "File integrity monitoring scan enabled" /var/ossec/logs/ossec.log``
 *Note: Verifying baseline completion is crucial to ensure that subsequent file events trigger immediate inotify kernel events rather than waiting for scheduled differential polling.*
 
 ## Testing & Event Execution
@@ -66,6 +66,7 @@ Upon file modification, Wazuh's real-time inotify watcher triggered a **Level 7 
       "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
   }
+``
 
 ## Network Telementary & Baseline Analysis
 During dashboard and log parsing, surrounding endpoint network chatter was evaluated to distinguish benign infrastructure traffic from potential security threats:
