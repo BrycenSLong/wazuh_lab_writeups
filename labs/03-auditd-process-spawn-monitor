@@ -1,0 +1,22 @@
+# Lab 03: Auditd Process Spawn Monitoring
+
+## Executive Summary
+In this lab, process spawning monitoring was configured and deployed to provide enhanced visibility into suspicious commands and unauthorized processes on an endpoint. This centralized visibility was achieved by leveraging ``auditd`` for granular local logging, which was then collected and shipped via the Wazuh agent to the Wazuh manager for security analysis and alerting. The added value of this implementation is a high-fidelity telemetry stream that can be reference and analyze during passive monitoring and incident response investigations.
+
+
+
+
+
+
+## MITRE ATT&CK Mapping
+* **Tactics:** Priviledge Escilation ([TA0004](https://attack.mitre.org/tactics/TA0004))
+* **Technique:** Create or Modify System Process ([T1543](https://attack.mitre.org/techniques/T1543))
+* **Sub-Technique:** 	Detection of Systemd Service Creation or Modification on Linux ([T1543.002](https://attack.mitre.org/techniques/T1543/002))
+
+
+
+
+## Key Take-Aways
+* **System Wide Visibility:** Implementing a custom kernel-level auditd rule allowed the entire operating system on the endpoint to be monitored for process creations. Establishing this comprehensive telemetry foundation prevents visibility gaps as the lab environment scales.
+
+* **The Noise Reduction Hypothesis:** : Logging every process spawn generates a massive volume of safe, routine system noise. My current hypothesis is that creating a blocklist (exclusion rules) for known, safe system processes will be critical for SIEM tuning, allowing the security platform to surface high-fidelity alerts without drowning in background noise.
